@@ -1,6 +1,7 @@
 @import _config.sass
 
-/* Layout
+/*
+  Layout
   ------
   Using a negative margin technique, adapted from ZEN. The page is loaded by this order:
 
@@ -9,8 +10,9 @@
   3. Navigation menus
   4. Sidebar Left
   5. Sideabr Right
+*/
 
-/* Layout rules. (Disclaimer: do not change if you're not sure you know what you're doing.)
+// Layout rules. (Disclaimer: do not change if you're not sure you know what you're doing.)
 #page
   @include outer-container
   margin-left: auto
@@ -51,7 +53,7 @@
     @include media($mobile)
       @include span-columns(4)
       @include shift(0)
-  .two-sidebars &  
+  .two-sidebars &
     // Span this div 7 columns wide.
     @include span-columns(7)
     // Shift it to the right 2 columns to accommodate for the first sidebar.
@@ -100,7 +102,7 @@
   float: none
   clear: both
 
-/* Layout Helpers
+// Layout Helpers
 #header,
 #footer,
 .mission,
@@ -112,10 +114,11 @@
   -------------
   You can change the padding inside the columns without changing the
   width of them by just usinbg the INNER div of each column
+*/
 .inner
   padding: 0
 
-/* Navigation styles
+// Navigation styles
 #navigation
   li
     list-style-type: none
